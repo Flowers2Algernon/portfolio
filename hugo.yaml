@@ -1,3 +1,540 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
+baseURL: "https://Flowers2Algernon.github.io/portfolio"
+languageCode: "en-us"
+title: "Portfolio"
+theme: profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name:
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    - identifier: gallery
+      name:
+      title: Blog posts
+      url: /gallery
+      weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Hugo Profile"
+  description: Text about my cool site
+  staticPath: "/portfolio/"  # The path to serve the static files from
+  favicon: "/portfolio/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+  # disableThemeToggle: true
+  # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Portfolio" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    menus:
+      disableAbout: true
+      disableExperience: true
+      disableEducation: true
+      disableProjects: true
+      disableAchievements: true
+      disableContact: true
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Jinhong Zhu"
+    subtitle: "Open-source maintainer"
+    content: "An enthusiastic and problem-solving-oriented software engineer."
+    image: /portfolio/images/hero.jpg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "/portfolio/Jinhong23_12.pdf"
+      download: false
+      newPage: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/Flowers2Algernon
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/jinhong-zhu
+        - icon: fas fa-blog
+          url: https://Flowers2Algernon.github.io
+      customIcons:
+      # - icon: /portfolio/images/fav.png
+      #   url: https://l-yohai.github.io
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: /portfolio/images/me.jpeg
+    content: |-
+      I am a master’s student at Curtin University, majoring in computer science.
+      Previously, I studied civil engineering at Xiangtan University.
+      After graduating with my bachelor’s degree, I worked for CSCEC for over two years, gaining some experience in the construction industry, especially in project management and schedule control.
+      Meanwhile, I worked remotely for Duolai Code. This experience has given me a diverse background that spans from engineering project management to software development.
+      Currently, I’m an active open-source maintainer. I am committed to continuously contributing to the future of AI and open-source.
+      I can work on multiple projects at the same time without getting stressed. After all, it’s something fun that I like to do which benefits other people. It also benefits the open-source community.
+
+
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "Python"
+        - "PyTorch"
+        - "Java"
+        - "Spring"
+        - "JavaScript"
+        - "C#"
+        - "Agile development"
+        - "MySQL"
+        - "Git"
+        - "AWS"
+
+  # Experience
+  experience:
+    enable: true
+    title: "Education"
+    items:
+      - job: "Master of Computing in Computer Science"
+        company: "Curtin University"
+        companyUrl: "https://www.curtin.edu.au/"
+        date: "July 2014 - Jun 2026"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        info:
+          enable: false
+        content: |
+          Some courses:
+          - Data Mining
+          - Cloud Ops - Security and Automation
+          - Machine Learning
+          - Web Application Frameworks
+          - ... and more
+    items:
+      - job: "Bachelor of Engineering in Civil Engineering"
+        company: "Xiangtan University"
+        companyUrl: "https://en.xtu.edu.cn/"
+        date: "Sep 2017 - Jun 2021"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        info:
+          enable: false
+        content: |
+          Merit-based scholarships:
+          - Changsha Alumni Association "Golden Laurel" Scholarships in 2017-2018 (1%)
+          - The National Encouragement Scholarship in 2018-2019 (3%)
+          - The First Prize Scholarship of Xiangtan University in 2019-2020 (5%)
+          - The Encouragement Scholarship of Xiangtan University in 2020-2021 (5%)
+          
+          Modeling competition awards:
+          - Second Prize, National Thsware Cup BIM Architectural Modeling Competition (Team Award), 04/2018
+
+          Some courses:
+          - Software Programming
+          - Linear Algebra
+          - Probability and Statistics
+          - ... and more
+      # - job: "Research Scientist (NLP)"
+      #   company: "Riiid"
+      #   companyUrl: "https://riiid.com"
+      #   date: "Jul 2023 - Dec 2023"
+      #   featuredLink:
+      #     enable: true
+      #     name: "View the project"
+      #     url: "https://example.com"
+      #   content: |
+      #     I am currently working as a research scientist (NLP) at Riiid in Seoul, Korea. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+  # Education
+  education:
+    enable: true
+    title: "Experiences"
+    index: false
+    items:
+      - title: "Junior Software Engineer"
+        school:
+          name: "Duolai Code"
+          url: "http://home.cskaoyan.com/#/home"
+        date: "Feb 2024 - Present"
+        # GPA: "3.9 out of 5.0"
+        content: |-
+          - Java Development
+        featuredLink:
+          enable: false
+          name: ""
+          url: ""
+      - title: "Senior Site Engineer"
+        school:
+          name: "CSCEC"
+          url: "https://english.cscec.com/"
+        date: "Jun 2023 - Feb 2024"
+        # GPA: "3.9 out of 5.0"
+        content: |-
+          Daye Lake Ecological District Farmers Returning Home Business Service Centre Project - (Public Sector Building)
+          - Managed on-site civil engineering for government buildings, maintaining ahead-of-schedule project status. Enforced strict quality (less than 5 defects/work process) & safety control (zero accidents).
+          - Coordinated with 15+ stakeholders including contractors & officials, ensuring 100% of projects completed within budget through regular progress reviews and early issue resolution.
+          - Provided technical support resolving on-site issues like construction/MEP drawing conflicts. Resolved over 100 technical issues ensuring continuous site operations.
+        featuredLink:
+          enable: false
+          name: "1st rank at Huggingface Open LLM Leaderboard"
+          url: "https://finance.yahoo.com/news/riiids-ai-model-ranks-1-135800579.html"
+      - title: "Site Engineer"
+        school:
+          name: "CSCEC"
+          url: "https://english.cscec.com/"
+        date: "Dec 2022 - Jun 2023"
+        content: |-
+          Phase I Expansion Project of Chu Hing Electronic Products - (Advanced Manufacturing Facility)
+          - Conducted quality inspections at all stages, typically identifying 3-4 issues daily.
+          - Monitored progress regularly, prepared detailed weekly reports. Achieved on-time completion of 3 key contract milestones.
+        featuredLink:
+          enable: false
+          name: "Awarded Ministry of Science and ICT Minister’s Award"
+          url: "https://www.mk.co.kr/news/it/10609550"
+      - title: "Assistant Site Engineer"
+        school:
+          name: "CSCEC"
+          url: "https://english.cscec.com/"
+        date: "Jul 2021 - Dec 2022"
+        content: |-
+          EPC General Contracting for TCL Air Conditioner Intelligent Manufacturing Park - (Intelligent Manufacturing Park)
+          - Oversaw on-site construction, resolving 55 quality & security issues weekly on average.
+          - Coordinated over 15 subcontractors, achieving 3-month ahead-of-schedule completion of main structure.
+          
+          Construction of Relocation Community for Hubei International Logistics Hub - (Relocation Community Construction)
+          - Assist the Engineers for performing daily site inspection.
+          - Assist Site Agent/Project Manager to monitor site progress.
+        featuredLink:
+          enable: false
+          name: "Awarded Ministry of Science and ICT Minister’s Award"
+          url: "https://www.mk.co.kr/news/it/10609550"
+  # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Xiangtan Univ, The Encouragement Scholarship of Xiangtan University
+        content: Scholarship (Feb, 2021)
+      - title: Xiangtan Univ, First Prize Scholarship of Xiangtan University
+        content: Scholarship (Jun, 2020)
+      - title: Xiangtan Univ, The National Encouragement Scholarship
+        content: Scholarship (Jan, 2019)
+      - title: National Thsware Cup, BIM Architectural Modeling Competition
+        content: Second Prize (Apr, 2018)
+      - title: Xiangtan Univ, Changsha Alumni Association "Golden Laurel"
+        content: Scholarship (Feb, 2018)
+
+  # projects
+  projects:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Story Completion Competition
+        content: Instruction fine-tuned (korean 13B lm) with diverse data augmentation, achieving 2nd place on public/private leaderboard in 3 days
+        image: /portfolio/images/story_completion_competition_thumbnail.png
+        featured:
+        # name: leaderboard
+        # link: https://corpus.korean.go.kr/taskOrdtm/taskLeaderBoard.do?taskOrdtmId=102&clCd=END_TASK&subMenuId=sub04
+        badges:
+          - "python"
+          - "pytorch"
+        modal: /portfolio/yohan_231201.pdf
+        links:
+          # - icon: fa fa-envelope
+          #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          # - icon: fab fa-github
+          #   url: https://github.com/gurusabarish/hugo-profile
+          # - icon: fab fa-twitter
+          #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+          - icon: fas fa-external-link-alt
+            url: https://corpus.korean.go.kr/taskOrdtm/taskLeaderBoard.do?taskOrdtmId=102&clCd=END_TASK&subMenuId=sub04
+
+      - title: Achieved SOTA in KLUE Benchmark
+        content: |
+          - Implemented R‐BERT and Retrospective Reader models, and enhanced their structures and learning methods
+          - Achieved SOTA in TC, STS, RE, MRC, NLI tasks
+        image: /portfolio/images/klue_thumbnail.png
+        featured:
+        # name: Demo
+        # link: https://django-converter.herokuapp.com
+        badges:
+          - "python"
+          - "pytorch"
+          - "huggingface"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/LostCow/KLUE
+
+      - title: Open Domain Question Answering Competition (Gold Medal)
+        content: |-
+          - Improved top-1 accuracy of document retrieval from 32% to 78% by hybrid retrieval techniques
+          - Improved EM score of question answering from 62.7 to 79.9 by effective methods
+        image: /portfolio/images/mrc_thumbnail.png
+        featured:
+          name: Watch More
+          link: https://cheonggyemountain-sherpa.github.io/MRC-Open-Domain-Question-Answering/
+        badges:
+          - "python"
+          - "pytorch"
+          - "huggingface"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/l-yohai/Korean-MRC-Open-Domain-Question-Answering
+          # - icon: fas fa-blog
+          #   url: https://cheonggyemountain-sherpa.github.io/MRC-Open-Domain-Question-Answering/
+
+      - title: Relation Extraction Competition (Silver Medal)
+        content: |-
+          - Trained custom embeddings, layers, and loss function with diverse augmented dataset
+        image: /portfolio/images/re_thumbnail.png
+        featured:
+          name: Watch More
+          link: https://cheonggyemountain-sherpa.github.io/KLUE_RE/
+        badges:
+          - "python"
+          - "pytorch"
+          - "huggingface"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/l-yohai/korean-entity-relation-extraction
+          # - icon: fas fa-blog
+          #   url: https://cheonggyemountain-sherpa.github.io/KLUE_RE/
+
+      - title: Image Classification Competition Competition (Silver Medal)
+        content: |-
+          - Utilized multi-task learning and test time augmentation techniques
+        image: /portfolio/images/maskcompetition_thumbnail.png
+        featured:
+          name: Watch More
+          link: https://l-yohai.github.io/AI-Competition-and-planning-guide/
+        badges:
+          - "python"
+          - "pytorch"
+          - "huggingface"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/l-yohai/Mask-Image-Classification
+          # - icon: fas fa-blog
+          #   url: https://github.com/l-yohai/Boostcamp-AI-Tech/blob/main/pstage_1/planning_guide.md
+
+      - title: Korean College Scholastic Ability Test (CSAT)
+        content: |-
+          - Compared the performance of various LLMs in solving the 2024 CSAT
+        image: /portfolio/images/csat_thumbnail.jpeg
+        featured:
+        # name: Demo V2
+        # link: https://hugo-profile-2.netlify.app
+        badges:
+          - "python"
+          - "pytorch"
+          - "huggingface"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/l-yohai/suneung
+
+      - title: Daily Papers
+        content: |-
+          - Developed a tool for auto-translating and summarizing Huggingface's daily papers into Korean using ChatGPT
+        image: /portfolio/images/daily_papers_thumbnail.png
+        featured:
+        # name: Demo V2
+        # link: https://hugo-profile-2.netlify.app
+        badges:
+          - "python"
+          - "pytorch"
+          - "huggingface"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/l-yohai/daily_papers_ko
+
+      - title: PFP Story Generation
+        content: |-
+          - Completed the story for 5,000 pfp characters using GPT-3
+        image: /portfolio/images/savetheweb3_thumbnail.png
+        featured:
+        # name: Demo V2
+        # link: https://hugo-profile-2.netlify.app
+        badges:
+          - "python"
+          - "pytorch"
+          - "huggingface"
+        links:
+          - icon: fas fa-external-link-alt
+            url: https://opensea.io/collection/savetheweb3
+
+      - title: "Look, Attend, and Generate Poem"
+        content: |-
+          - Developed a web service for generating poetry from user-uploaded photos
+        image: /portfolio/images/look_attend_and_generate_poem_thumbnail.png
+        featured:
+        # name: Demo V2
+        # link: https://hugo-profile-2.netlify.app
+        badges:
+          - "python"
+          - "pytorch"
+          - "huggingface"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/boostcampaitech2/final-project-level3-nlp-08
+
+      - title: Movie Review Rating Service
+        content: |-
+          - Developed a web service for auto-rating and archiving key movie reviews
+        image: /portfolio/images/movie_review_thumbnail.png
+        featured:
+        # name: Demo V2
+        # link: https://hugo-profile-2.netlify.app
+        badges:
+          - "python"
+          - "pytorch"
+          - "huggingface"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/Gaepodong/Your-True-Review
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    email: zjhong6666@gmail.com
+    btnName: Mail me
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+    # github: https://github.com
+    # linkedin: https://linkedin.com
+    # twitter: https://twitter.com
+    # instagram: https://instagram.com
+    # facebook: https://facebook.com
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: ""
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
