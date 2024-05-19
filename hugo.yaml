@@ -538,4 +538,8 @@ params:
     articleRecent: "Jan 2, 2006"
 
   #customScripts: -| # You can add custom scripts which will be added before </body> tag
+<<<<<<< HEAD
   #  <script type="text/javascript"><!-- any script here --></script>
+=======
+  #  <script type="text/javascript"><!-- any script here --></script>
+>>>>>>> 4eff26d1e81ebc07d6972c516d6611e10a4d913c
