@@ -183,10 +183,10 @@ params:
     enable: true
     title: "Education"
     items:
-      - job: "Master of Computing in Computer Science"
+      - job: "Master of Computing, Computer Science"
         company: "Curtin University"
         companyUrl: "https://www.curtin.edu.au/"
-        date: "July 2024 - Jun 2026"
+    #    date: "July 2024 - Jun 2026"
         featuredLink:
           enable: false
           name: "View the project"
@@ -201,10 +201,28 @@ params:
           - Web Application Frameworks
           - ... and more
 
-      - job: "Bachelor of Engineering in Civil Engineering"
+      - job: "Bachelor of Science (Hons), Computer Science"
+        company: "University of London"
+        companyUrl: "https://www.london.ac.uk/about/global-reputation"
+      #  date: "July 2024 - Jun 2026"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        info:
+          enable: false
+        content: |
+          Some courses:
+          - Object oriented programming
+          - Databases, networks and the web
+          - Machine learning and neural networks
+          - Natural language processing
+          - ... and more    
+
+      - job: "Bachelor of Engineering, Civil Engineering"
         company: "Xiangtan University"
         companyUrl: "https://en.xtu.edu.cn/"
-        date: "Sep 2017 - Jun 2021"
+      #  date: "Sep 2017 - Jun 2021"
         featuredLink:
           enable: false
           name: "View the project"
@@ -243,11 +261,11 @@ params:
     title: "Experiences"
     index: false
     items:
-      - title: "Junior Software Engineer"
+      - title: "Software Engineer"
         school:
-          name: "Duolai Code"
-          url: "http://home.cskaoyan.com/#/home"
-        date: "Feb 2024 - Present"
+          name: "Duolai Mall"
+    #      url: "http://home.cskaoyan.com/#/home"
+        date: "Feb 2024 - Apr 2024"
         # GPA: "3.9 out of 5.0"
         content: |-
           - Java Development
@@ -256,7 +274,7 @@ params:
           name: ""
           url: ""
 
-      - title: "Senior Site Engineer"
+      - title: "Project Engineer"
         school:
           name: "CSCEC"
           url: "https://english.cscec.com/"
@@ -271,36 +289,7 @@ params:
           enable: false
           name: "1st rank at Huggingface Open LLM Leaderboard"
           url: "https://finance.yahoo.com/news/riiids-ai-model-ranks-1-135800579.html"
-      - title: "Site Engineer"
-        school:
-          name: "CSCEC"
-          url: "https://english.cscec.com/"
-        date: "Dec 2022 - Jun 2023"
-        content: |-
-          Phase I Expansion Project of Chu Hing Electronic Products - (Advanced Manufacturing Facility)
-          - Conducted quality inspections at all stages, typically identifying 3-4 issues daily.
-          - Monitored progress regularly, prepared detailed weekly reports. Achieved on-time completion of 3 key contract milestones.
-        featuredLink:
-          enable: false
-          name: "Awarded Ministry of Science and ICT Minister’s Award"
-          url: "https://www.mk.co.kr/news/it/10609550"
-      - title: "Assistant Site Engineer"
-        school:
-          name: "CSCEC"
-          url: "https://english.cscec.com/"
-        date: "Jul 2021 - Dec 2022"
-        content: |-
-          EPC General Contracting for TCL Air Conditioner Intelligent Manufacturing Park - (Intelligent Manufacturing Park)
-          - Oversaw on-site construction, resolving 55 quality & security issues weekly on average.
-          - Coordinated over 15 subcontractors, achieving 3-month ahead-of-schedule completion of main structure.
-          
-          Construction of Relocation Community for Hubei International Logistics Hub - (Relocation Community Construction)
-          - Assist the Engineers for performing daily site inspection.
-          - Assist Site Agent/Project Manager to monitor site progress.
-        featuredLink:
-          enable: false
-          name: "Awarded Ministry of Science and ICT Minister’s Award"
-          url: "https://www.mk.co.kr/news/it/10609550"
+      
   # Achievements
   achievements:
     enable: true
