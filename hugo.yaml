@@ -230,15 +230,6 @@ params:
         info:
           enable: false
         content: |
-          Merit-based scholarships:
-          - Changsha Alumni Association "Golden Laurel" Scholarships in 2017-2018 (1%)
-          - The National Encouragement Scholarship in 2018-2019 (3%)
-          - The First Prize Scholarship of Xiangtan University in 2019-2020 (5%)
-          - The Encouragement Scholarship of Xiangtan University in 2020-2021 (5%)
-          
-          Modeling competition awards:
-          - Second Prize, National Thsware Cup BIM Architectural Modeling Competition (Team Award), 04/2018
-
           Some courses:
           - Software Programming
           - Linear Algebra
