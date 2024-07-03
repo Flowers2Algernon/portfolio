@@ -155,21 +155,20 @@ params:
     title: "About Me"
     image: /portfolio/baking.png
     content: |
-      - Currently, I’m an active open-source maintainer. I am committed to continuously contributing to the future of AI and open-source.
-      - I can work on multiple projects at the same time without getting stressed. After all, it’s something fun that I like to do which benefits other people. It also benefits the open-source community.
-
-
-    skills:
+      As an active open-source developer, I'm deeply committed to advancing the future of AI and open-source technologies. 
+      My passion for this field enables me to efficiently manage multiple projects concurrently, finding joy and fulfillment in the process rather than stress.
+      This work not only aligns with my personal interests but also contributes significantly to the broader open-source community.
+    skills: 
       enable: true
       title: "Here are a few technologies I've been working with recently:"
-      items:
+      items: 
         - "Python"
         - "PyTorch"
         - "Java"
-        - "Spring"
+        - "React"
         - "JavaScript"
-        - "C#"
-        - "Agile development"
+        - "Go"
+        - "Redis"
         - "MySQL"
         - "Git"
         - "AWS"
@@ -248,14 +247,16 @@ params:
     title: "Experiences"
     index: false
     items:
-      - title: "Software Engineer"
+      - title: "SDE Intern"
         school:
-          name: "Duolai Mall"
-    #      url: "http://home.cskaoyan.com/#/home"
+          name: "SP Mall Technology Co., Ltd."
+    #      url: ""
         date: "Feb 2024 - Apr 2024"
         # GPA: "3.9 out of 5.0"
         content: |-
-          - Java Development
+          - Participated in Agile development processes, attending daily stand-ups and sprint planning meetings.
+          - Implemented RESTful APIs using Java Spring Boot framework to enhance backend functionality.
+          - Designed a Java multithreading solution for parallel data processing, reducing execution time by 60%.
         featuredLink:
           enable: false
           name: ""
@@ -268,8 +269,8 @@ params:
         date: "Jun 2023 - Feb 2024"
         # GPA: "3.9 out of 5.0"
         content: |-
-          - Coordinated 15+ stakeholders to ensure on-budget project completion through project management and proactive issue resolution.
-          - Managed on-site civil engineering for several projects, enforced strict quality (less than 5 defects/work process) & safety control.
+          - Coordinated 15+ stakeholders to ensure on-budget project completion through proactive issue resolution.
+          - Managed on-site civil engineering for several projects, implementing rigorous project schedule management.
         featuredLink:
           enable: false
           name: "1st rank at Huggingface Open LLM Leaderboard"
@@ -280,7 +281,9 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Xiangtan Univ, First Prize Scholarship of Xiangtan University
+      - title: Curtin Univ, 2024 Global Curtin Scholarships – Merit Based Scholarship
+        content: Scholarship (Sep, 2023)
+      - title: Xiangtan Univ, First Class Scholarship of Xiangtan University
         content: Scholarship (Jun, 2020)
       - title: Xiangtan Univ, The National Encouragement Scholarship
         content: Scholarship (Jan, 2019)
@@ -291,21 +294,19 @@ params:
 
   # projects
   projects:
-    enable: false
+    enable: True
     # title: "Custom Name"
     items:
       - title: DuoLaiMall - A Java backend online shopping mall project
-        content: 
-           - A Java backend online shopping mall project based on microservice architecture.
-           - The main technology stack includes Spring Cloud, Redis, Elasticsearch, RocketMQ.
-           - This e-commerce system utilises a distributed architecture to provide a scalable and efficient platform for online retail operations.
-        image: /portfolio/assets/duolaimall.png
+        content: |-
+           ♦ This Project utilises a distributed architecture to provide a scalable and efficient platform for online retail operations.
+        image: https://github.com/Flowers2Algernon/portfolio/raw/b4348193827d32b586cb71ac529086b0e8192755/assets/duolaimall.png
         featured:
         # name: leaderboard
         # link: https://corpus.korean.go.kr/taskOrdtm/taskLeaderBoard.do?taskOrdtmId=102&clCd=END_TASK&subMenuId=sub04
         badges:
           - "Java Spring Cloud"
-          - "Redis"
+          - "Microservice Architecture"
         # modal: /portfolio/yohan_231201.pdf
         links:
           # - icon: fa fa-envelope
