@@ -154,13 +154,9 @@ params:
     enable: true
     title: "About Me"
     image: /portfolio/baking.png
-    content: |-
-      I am a master’s student at Curtin University, majoring in computer science.
-      Previously, I studied civil engineering at Xiangtan University.
-      After graduating with my bachelor’s degree, I worked for CSCEC for over two years, gaining some experience in the construction industry, especially in project management and schedule control.
-      Meanwhile, I worked remotely for Duolai Code. This experience has given me a diverse background that spans from engineering project management to software development.
-      Currently, I’m an active open-source maintainer. I am committed to continuously contributing to the future of AI and open-source.
-      I can work on multiple projects at the same time without getting stressed. After all, it’s something fun that I like to do which benefits other people. It also benefits the open-source community.
+    content: |
+      - Currently, I’m an active open-source maintainer. I am committed to continuously contributing to the future of AI and open-source.
+      - I can work on multiple projects at the same time without getting stressed. After all, it’s something fun that I like to do which benefits other people. It also benefits the open-source community.
 
 
     skills:
@@ -272,10 +268,8 @@ params:
         date: "Jun 2023 - Feb 2024"
         # GPA: "3.9 out of 5.0"
         content: |-
-          Daye Lake Ecological District Farmers Returning Home Business Service Centre Project - (Public Sector Building)
-          - Managed on-site civil engineering for government buildings, maintaining ahead-of-schedule project status. Enforced strict quality (less than 5 defects/work process) & safety control (zero accidents).
-          - Coordinated with 15+ stakeholders including contractors & officials, ensuring 100% of projects completed within budget through regular progress reviews and early issue resolution.
-          - Provided technical support resolving on-site issues like construction/MEP drawing conflicts. Resolved over 100 technical issues ensuring continuous site operations.
+          - Coordinated 15+ stakeholders to ensure on-budget project completion through project management and proactive issue resolution.
+          - Managed on-site civil engineering for several projects, enforced strict quality (less than 5 defects/work process) & safety control.
         featuredLink:
           enable: false
           name: "1st rank at Huggingface Open LLM Leaderboard"
@@ -286,8 +280,6 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Xiangtan Univ, The Encouragement Scholarship of Xiangtan University
-        content: Scholarship (Feb, 2021)
       - title: Xiangtan Univ, First Prize Scholarship of Xiangtan University
         content: Scholarship (Jun, 2020)
       - title: Xiangtan Univ, The National Encouragement Scholarship
@@ -302,168 +294,171 @@ params:
     enable: false
     # title: "Custom Name"
     items:
-      - title: Story Completion Competition
-        content: Instruction fine-tuned (korean 13B lm) with diverse data augmentation, achieving 2nd place on public/private leaderboard in 3 days
-        image: /portfolio/images/story_completion_competition_thumbnail.png
+      - title: DuoLaiMall - A Java backend online shopping mall project
+        content: 
+           - A Java backend online shopping mall project based on microservice architecture.
+           - The main technology stack includes Spring Cloud, Redis, Elasticsearch, RocketMQ.
+           - This e-commerce system utilises a distributed architecture to provide a scalable and efficient platform for online retail operations.
+        image: /portfolio/assets/duolaimall.png
         featured:
         # name: leaderboard
         # link: https://corpus.korean.go.kr/taskOrdtm/taskLeaderBoard.do?taskOrdtmId=102&clCd=END_TASK&subMenuId=sub04
         badges:
-          - "python"
-          - "pytorch"
-        modal: /portfolio/yohan_231201.pdf
+          - "Java Spring Cloud"
+          - "Redis"
+        # modal: /portfolio/yohan_231201.pdf
         links:
           # - icon: fa fa-envelope
           #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          # - icon: fab fa-github
-          #   url: https://github.com/gurusabarish/hugo-profile
+          - icon: fab fa-github
+            url: https://github.com/Flowers2Algernon/duo-lai-mall
           # - icon: fab fa-twitter
           #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
-          - icon: fas fa-external-link-alt
-            url: https://corpus.korean.go.kr/taskOrdtm/taskLeaderBoard.do?taskOrdtmId=102&clCd=END_TASK&subMenuId=sub04
+          # - icon: fas fa-external-link-alt
+          #   url: https://corpus.korean.go.kr/taskOrdtm/taskLeaderBoard.do?taskOrdtmId=102&clCd=END_TASK&subMenuId=sub04
 
-      - title: Achieved SOTA in KLUE Benchmark
-        content: |
-          - Implemented R‐BERT and Retrospective Reader models, and enhanced their structures and learning methods
-          - Achieved SOTA in TC, STS, RE, MRC, NLI tasks
-        image: /portfolio/images/klue_thumbnail.png
-        featured:
-        # name: Demo
-        # link: https://django-converter.herokuapp.com
-        badges:
-          - "python"
-          - "pytorch"
-          - "huggingface"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/LostCow/KLUE
+      # - title: Achieved SOTA in KLUE Benchmark
+      #   content: |
+      #     - Implemented R‐BERT and Retrospective Reader models, and enhanced their structures and learning methods
+      #     - Achieved SOTA in TC, STS, RE, MRC, NLI tasks
+      #   image: /portfolio/images/klue_thumbnail.png
+      #   featured:
+      #   # name: Demo
+      #   # link: https://django-converter.herokuapp.com
+      #   badges:
+      #     - "python"
+      #     - "pytorch"
+      #     - "huggingface"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/LostCow/KLUE
 
-      - title: Open Domain Question Answering Competition (Gold Medal)
-        content: |-
-          - Improved top-1 accuracy of document retrieval from 32% to 78% by hybrid retrieval techniques
-          - Improved EM score of question answering from 62.7 to 79.9 by effective methods
-        image: /portfolio/images/mrc_thumbnail.png
-        featured:
-          name: Watch More
-          link: https://cheonggyemountain-sherpa.github.io/MRC-Open-Domain-Question-Answering/
-        badges:
-          - "python"
-          - "pytorch"
-          - "huggingface"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/l-yohai/Korean-MRC-Open-Domain-Question-Answering
-          # - icon: fas fa-blog
-          #   url: https://cheonggyemountain-sherpa.github.io/MRC-Open-Domain-Question-Answering/
+      # - title: Open Domain Question Answering Competition (Gold Medal)
+      #   content: |-
+      #     - Improved top-1 accuracy of document retrieval from 32% to 78% by hybrid retrieval techniques
+      #     - Improved EM score of question answering from 62.7 to 79.9 by effective methods
+      #   image: /portfolio/images/mrc_thumbnail.png
+      #   featured:
+      #     name: Watch More
+      #     link: https://cheonggyemountain-sherpa.github.io/MRC-Open-Domain-Question-Answering/
+      #   badges:
+      #     - "python"
+      #     - "pytorch"
+      #     - "huggingface"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/l-yohai/Korean-MRC-Open-Domain-Question-Answering
+      #     # - icon: fas fa-blog
+      #     #   url: https://cheonggyemountain-sherpa.github.io/MRC-Open-Domain-Question-Answering/
 
-      - title: Relation Extraction Competition (Silver Medal)
-        content: |-
-          - Trained custom embeddings, layers, and loss function with diverse augmented dataset
-        image: /portfolio/images/re_thumbnail.png
-        featured:
-          name: Watch More
-          link: https://cheonggyemountain-sherpa.github.io/KLUE_RE/
-        badges:
-          - "python"
-          - "pytorch"
-          - "huggingface"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/l-yohai/korean-entity-relation-extraction
-          # - icon: fas fa-blog
-          #   url: https://cheonggyemountain-sherpa.github.io/KLUE_RE/
+      # - title: Relation Extraction Competition (Silver Medal)
+      #   content: |-
+      #     - Trained custom embeddings, layers, and loss function with diverse augmented dataset
+      #   image: /portfolio/images/re_thumbnail.png
+      #   featured:
+      #     name: Watch More
+      #     link: https://cheonggyemountain-sherpa.github.io/KLUE_RE/
+      #   badges:
+      #     - "python"
+      #     - "pytorch"
+      #     - "huggingface"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/l-yohai/korean-entity-relation-extraction
+      #     # - icon: fas fa-blog
+      #     #   url: https://cheonggyemountain-sherpa.github.io/KLUE_RE/
 
-      - title: Image Classification Competition Competition (Silver Medal)
-        content: |-
-          - Utilized multi-task learning and test time augmentation techniques
-        image: /portfolio/images/maskcompetition_thumbnail.png
-        featured:
-          name: Watch More
-          link: https://l-yohai.github.io/AI-Competition-and-planning-guide/
-        badges:
-          - "python"
-          - "pytorch"
-          - "huggingface"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/l-yohai/Mask-Image-Classification
-          # - icon: fas fa-blog
-          #   url: https://github.com/l-yohai/Boostcamp-AI-Tech/blob/main/pstage_1/planning_guide.md
+      # - title: Image Classification Competition Competition (Silver Medal)
+      #   content: |-
+      #     - Utilized multi-task learning and test time augmentation techniques
+      #   image: /portfolio/images/maskcompetition_thumbnail.png
+      #   featured:
+      #     name: Watch More
+      #     link: https://l-yohai.github.io/AI-Competition-and-planning-guide/
+      #   badges:
+      #     - "python"
+      #     - "pytorch"
+      #     - "huggingface"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/l-yohai/Mask-Image-Classification
+      #     # - icon: fas fa-blog
+      #     #   url: https://github.com/l-yohai/Boostcamp-AI-Tech/blob/main/pstage_1/planning_guide.md
 
-      - title: Korean College Scholastic Ability Test (CSAT)
-        content: |-
-          - Compared the performance of various LLMs in solving the 2024 CSAT
-        image: /portfolio/images/csat_thumbnail.jpeg
-        featured:
-        # name: Demo V2
-        # link: https://hugo-profile-2.netlify.app
-        badges:
-          - "python"
-          - "pytorch"
-          - "huggingface"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/l-yohai/suneung
+      # - title: Korean College Scholastic Ability Test (CSAT)
+      #   content: |-
+      #     - Compared the performance of various LLMs in solving the 2024 CSAT
+      #   image: /portfolio/images/csat_thumbnail.jpeg
+      #   featured:
+      #   # name: Demo V2
+      #   # link: https://hugo-profile-2.netlify.app
+      #   badges:
+      #     - "python"
+      #     - "pytorch"
+      #     - "huggingface"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/l-yohai/suneung
 
-      - title: Daily Papers
-        content: |-
-          - Developed a tool for auto-translating and summarizing Huggingface's daily papers into Korean using ChatGPT
-        image: /portfolio/images/daily_papers_thumbnail.png
-        featured:
-        # name: Demo V2
-        # link: https://hugo-profile-2.netlify.app
-        badges:
-          - "python"
-          - "pytorch"
-          - "huggingface"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/l-yohai/daily_papers_ko
+      # - title: Daily Papers
+      #   content: |-
+      #     - Developed a tool for auto-translating and summarizing Huggingface's daily papers into Korean using ChatGPT
+      #   image: /portfolio/images/daily_papers_thumbnail.png
+      #   featured:
+      #   # name: Demo V2
+      #   # link: https://hugo-profile-2.netlify.app
+      #   badges:
+      #     - "python"
+      #     - "pytorch"
+      #     - "huggingface"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/l-yohai/daily_papers_ko
 
-      - title: PFP Story Generation
-        content: |-
-          - Completed the story for 5,000 pfp characters using GPT-3
-        image: /portfolio/images/savetheweb3_thumbnail.png
-        featured:
-        # name: Demo V2
-        # link: https://hugo-profile-2.netlify.app
-        badges:
-          - "python"
-          - "pytorch"
-          - "huggingface"
-        links:
-          - icon: fas fa-external-link-alt
-            url: https://opensea.io/collection/savetheweb3
+      # - title: PFP Story Generation
+      #   content: |-
+      #     - Completed the story for 5,000 pfp characters using GPT-3
+      #   image: /portfolio/images/savetheweb3_thumbnail.png
+      #   featured:
+      #   # name: Demo V2
+      #   # link: https://hugo-profile-2.netlify.app
+      #   badges:
+      #     - "python"
+      #     - "pytorch"
+      #     - "huggingface"
+      #   links:
+      #     - icon: fas fa-external-link-alt
+      #       url: https://opensea.io/collection/savetheweb3
 
-      - title: "Look, Attend, and Generate Poem"
-        content: |-
-          - Developed a web service for generating poetry from user-uploaded photos
-        image: /portfolio/images/look_attend_and_generate_poem_thumbnail.png
-        featured:
-        # name: Demo V2
-        # link: https://hugo-profile-2.netlify.app
-        badges:
-          - "python"
-          - "pytorch"
-          - "huggingface"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/boostcampaitech2/final-project-level3-nlp-08
+      # - title: "Look, Attend, and Generate Poem"
+      #   content: |-
+      #     - Developed a web service for generating poetry from user-uploaded photos
+      #   image: /portfolio/images/look_attend_and_generate_poem_thumbnail.png
+      #   featured:
+      #   # name: Demo V2
+      #   # link: https://hugo-profile-2.netlify.app
+      #   badges:
+      #     - "python"
+      #     - "pytorch"
+      #     - "huggingface"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/boostcampaitech2/final-project-level3-nlp-08
 
-      - title: Movie Review Rating Service
-        content: |-
-          - Developed a web service for auto-rating and archiving key movie reviews
-        image: /portfolio/images/movie_review_thumbnail.png
-        featured:
-        # name: Demo V2
-        # link: https://hugo-profile-2.netlify.app
-        badges:
-          - "python"
-          - "pytorch"
-          - "huggingface"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/Gaepodong/Your-True-Review
+      # - title: Movie Review Rating Service
+      #   content: |-
+      #     - Developed a web service for auto-rating and archiving key movie reviews
+      #   image: /portfolio/images/movie_review_thumbnail.png
+      #   featured:
+      #   # name: Demo V2
+      #   # link: https://hugo-profile-2.netlify.app
+      #   badges:
+      #     - "python"
+      #     - "pytorch"
+      #     - "huggingface"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/Gaepodong/Your-True-Review
 
   #Contact
   contact:
